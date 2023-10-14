@@ -1,0 +1,114 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+:root {
+  --black: #000000;
+  --text-secondary: #7e7e7e;
+  --primary: #19a296;
+  --white: #ffffff;
+  --white-rgb: 255, 255, 255;
+  --black-rgb: 0, 0, 0;
+  --animation-duration: 500ms;
+}
+/* style reset */
+li {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+.container {
+  width: 100%;
+  max-width: 1536px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: auto;
+}
+/* display classes */
+.flex {
+  display: flex;
+}
+.grid {
+  display: grid;
+}
+/* colors */
+.bg-primary {
+  background-color: var(--primary);
+}
+.text-white {
+  color: var(--white);
+}
+
+.inset-0 {
+  inset: 0;
+}
+/* position classes */
+.absolute {
+  position: absolute;
+}
+/* alignment classes */
+.place-center {
+  place-items: center;
+}
+/* space utility */
+.space-y-3 > *:not([hidden]):not(:first-child) {
+  margin-top: 12px;
+}
+/* menu class */
+.menu {
+  transition: all var(--animation-duration);
+  border-radius: 50%;
+  transform: scale(0);
+  transform-origin: top left;
+}
+.menu.active {
+  border-radius: 0;
+  transform: scale(1);
+}
+.menu-item {
+  color: var(--white);
+  text-transform: capitalize;
+  background-color: transparent;
+  font-size: 16px;
+  padding: 5px 12px;
+  border-radius: 5px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
+    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+}
+.menu-item:hover {
+  background-color: white;
+  color: var(--primary);
+}
+
+#closeMenu {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  padding: 6px 12px;
+  color: white;
+  border-radius: 10px;
+  border: 1px solid;
+  background-color: rgba(var(--white-rgb), 0.2);
+  backdrop-filter: blur(5px);
+}
+/* media query  */
+@media (max-width: 1280px) {
+  .container {
+    max-width: 1280px;
+  }
+}
+@media (max-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+@media (max-width: 640px) {
+  .container {
+    max-width: 640px;
+  }
+}
