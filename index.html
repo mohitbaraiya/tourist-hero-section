@@ -9,53 +9,55 @@
 </head>
 
 <body>
-  <header>
-    <div class="container flex">
-      <!-- left section start -->
-      <div class="lft-section flex">
-
-        <div>logo</div>
-        <div class="flex">
-          <!-- search form -->
-          <div class="flex">
-            <form><input type="search" /></form>
-            <button>submit</button>
-          </div>
-          <!-- search form end -->
-          <!-- menu start -->
-          <div>
-            <a id="menuButton" href="javascript:void(0)">menu</a>
-            <nav class="bg-primary menu inset-0 absolute grid place-center">
-              <a href="javascript:void(0)" id="closeMenu">close</a>
-              <ul class="space-y-3 w-full">
-                <li>
-                  <a href="javascript:void(0)" class="menu-item">Home</a>
-                </li>
-                <li>
-                  <a href="javascript:void(0)" class="menu-item">About</a>
-                </li>
-                <li>
-                  <a href="javascript:void(0)" class="menu-item">Services</a>
-                </li>
-                <li>
-                  <a href="javascript:void(0)" class="menu-item">menu</a>
-                </li>
-              </ul>
-            </nav>
-          </div>
-          <!-- menu end -->
-        </div>
+  <div class="container flex">
+    <!-- left section start -->
+    <div class="lft-section flex">
+      <div class="logo">logo</div>
+      <!-- search form -->
+      <div class="flex search-form" id="searchForm">
+        <form>
+          <input type="search" />
+        </form>
+        <a href="javascript:void(0)" id="searchBtn">
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="14" height="14" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" />
+            <path d="M21 21l-6 -6" />
+          </svg>
+        </a>
 
       </div>
-      <!-- left section end -->
-      <!-- right section start -->
-      <div class="rght-section"></div>
-      <!-- right section end -->
+      <!-- search form end -->
+      <!-- menu start -->
+      <div>
+        <a id="menuButton" href="javascript:void(0)">menu</a>
+        <nav class="bg-primary menu inset-0 absolute grid place-center">
+          <a href="javascript:void(0)" id="closeMenu">close</a>
+          <ul class="space-y-3 w-full">
+            <li>
+              <a href="javascript:void(0)" class="menu-item">Home</a>
+            </li>
+            <li>
+              <a href="javascript:void(0)" class="menu-item">About</a>
+            </li>
+            <li>
+              <a href="javascript:void(0)" class="menu-item">Services</a>
+            </li>
+            <li>
+              <a href="javascript:void(0)" class="menu-item">menu</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <!-- menu end -->
     </div>
-  </header>
-  <main>
-    <section></section>
-  </main>
+  </div>
+  <!-- left section end -->
+  <!-- right section start -->
+  <div class="rght-section"></div>
+  <!-- right section end -->
+  </div>
+
   <script src="script.js"></script>
 </body>
 
